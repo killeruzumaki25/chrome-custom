@@ -16,16 +16,12 @@ body{
   border-radius:2%;
   overflow:hidden;
   color:black;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  flex-grow:1;
 }
-.todoInput{
-  width:100%;
-  height:5vh;
-  outline:none;
-  border:1px solid black;
-}
-
-.saveBtn{
-  height:5vh;
+.con button{
   width:20%;
-  border:1px solid black;
+  height:10vh;
 }
