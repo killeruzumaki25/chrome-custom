@@ -11,45 +11,22 @@ const con = document.createElement('div');
 con.classList.add('con');
 oldBody.appendChild(con);
 
-let inp = document.createElement('input');
-inp.classList.add('todoInput');
-function saveTodo(){
-  if(inp.value){
-    localStorage.setItem("todo",inp.value)
-    alert("done")
-  }
-}
-con.appendChild(inp);
+let wallBtn = document.createElement('button');
+wallBtn.innerText="Wallpaper";
+wallBtn.classList.add('wallBtn');
+con.appendChild(wallBtn);
 
-let saveBtn = document.createElement('button');
-saveBtn.innerText="Save";
-saveBtn.classList.add('saveBtn');
-con.appendChild(saveBtn);
+let colorTheme = document.createElement("button");
+colorTheme.innerText="Theme"
+colorTheme.classList.add("colorTheme")
+con.appendChild(colorTheme);
 
-saveBtn.addEventListener('click',()=>{
-  saveTodo();
-})
+let gadgetBtn= document.createElement("button");
+gadgetBtn.innerText="Gadget"
+gadgetBtn.classList.add("colorTheme")
+con.appendChild(gadgetBtn);
 
-var listD = document.createElement("div");
-listD.classList.add("listD");
-
-setTimeout(() => {
-  var todos = JSON.parse(localStorage.getItem("todo")); // Retrieve todos from localStorage
-
-  if (todos && todos.length > 0) {
-    todos.forEach(function(todo) {
-      var p = document.createElement("p");
-      var checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.checked = todo.checked; // Assuming each todo has a 'checked' property indicating its state
-
-      var text = document.createTextNode(todo.text); // Assuming each todo has a 'text' property containing its content
-      p.appendChild(checkbox);
-      p.appendChild(text);
-      listD.appendChild(p);
-    });
-    con.appendChild(listD);
-  } else {
-    console.log("No todos found.");
-  }
-}, 5000);
+let adRemove = document.createElement("button");
+adRemove.innerText="Add remove"
+adRemove.classList.add("colorTheme")
+con.appendChild(adRemove);
