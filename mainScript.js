@@ -34,12 +34,12 @@ mainCon.appendChild(colorTheme);
 
 let gadgetBtn= document.createElement("button");
 gadgetBtn.innerText="Gadget"
-gadgetBtn.classList.add("colorTheme")
+gadgetBtn.classList.add("gadgetBtn")
 mainCon.appendChild(gadgetBtn);
 
 let adRemove = document.createElement("button");
 adRemove.innerText="Anti-ads"
-adRemove.classList.add("colorTheme")
+adRemove.classList.add("adRemove")
 mainCon.appendChild(adRemove);
 
 let inspectBtn = document.createElement("button");
@@ -51,4 +51,9 @@ let projectBtn = document.createElement("button");
 projectBtn.innerText="Project"
 projectBtn.classList.add("projectBtn")
 mainCon.appendChild(projectBtn);
+
+closeBtn.addEventListener('click',()=>{
+  con.classList.toggle('conUp')
+})
+
 
