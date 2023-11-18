@@ -42,7 +42,7 @@ body{
   z-index: 9999;
   top: 0;
   border-radius: 2%;
-  overflow: hidden;
+  overflow: auto;
   color: black;
   flex-direction: row;
 }
@@ -111,5 +111,17 @@ animation-fill-mode:both;
 }
 
 .wallDis{
+  height:30vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  margin:15% 0%;
   
+/*  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items:center;
+  justify-content:center;
+  margin-left:5%;
+  margin-top:10%;*/
 }
