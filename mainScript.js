@@ -156,6 +156,7 @@ adRemove.addEventListener('click',()=>{
     }
   }
 })();`
+  oldBody.appendChild(adRemoveScript);
 })
 
 let inspectBtn = document.createElement("button");
