@@ -13,7 +13,7 @@ body{
   z-index:9999;
 }
 
-.con{
+.con >* {
   color: orange; /* replace "orange" with your desired color */
   font-family: 'Black Ops One';
   outline:0px solid red;
