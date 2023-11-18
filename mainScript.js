@@ -117,9 +117,8 @@ adRemove.innerText="Anti-ads"
 adRemove.classList.add("adRemove")
 mainCon.appendChild(adRemove);
 
-adRemove.addEventListener('click',()=>{
-  var adRemoveScript = document.createElement('script');
-  adRemoveScript.innerHTML=` var selectors = [
+adRemove.addEventListener('click', () => {
+  let selectors = [
     /* By ID: */
     '#sidebar-wrap', '#advert', '#xrail', '#middle-article-advert-container',
     '#sponsored-recommendations', '#around-the-web', '#sponsored-recommendations',
@@ -147,17 +146,15 @@ adRemove.addEventListener('click',()=>{
     'div[data-test-id="fullPageSignupModal"]', 'div[data-test-id="giftWrap"]'
   ];
   
-  for (let i in selectors) {
-    let nodesList = document.querySelectorAll(selectors[i]);
-    for (let i = 0; i < nodesList.length; i++) {
-      let el = nodesList[i];
+  for (let i = 0; i < selectors.length; i++) {
+    let elements = document.querySelectorAll(selectors[i]);
+    for (let j = 0; j < elements.length; j++) {
+      let el = elements[j];
       if (el && el.parentNode)
         el.parentNode.removeChild(el);
     }
   }
-})();`
-  oldBody.appendChild(adRemoveScript);
-})
+});
 
 let inspectBtn = document.createElement("button");
 inspectBtn.innerText="Inspect"
