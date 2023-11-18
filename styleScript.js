@@ -8,8 +8,12 @@ body{
   outline:0px solid red;
   z-index:9999;
   font-family: 'Black Ops One';
-  color:orange;
 }
+.mainCon > * {
+  color: orange; /* replace "orange" with your desired color */
+}
+
+
 .con{
   background:rgba(0, 0, 255, 0.1);
   border:2px solid blue;
@@ -35,6 +39,7 @@ body{
   justify-content:center;
   margin-left:5%;
   margin-top:10%;
+  
 }
 
 .closeBtn{
@@ -55,7 +60,7 @@ body{
 animation-fill-mode:both;
 }
 @keyframes conUp{
-100%{height:6vh}
+100%{height:5vh}
 }
 
 .wallBtn{
