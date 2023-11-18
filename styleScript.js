@@ -5,6 +5,7 @@ body{
   scroll-behavior: smooth;
 }
 *{
+  outline:0px solid red;
 }
 .mainCon > * {
   color: orange; /* replace "orange" with your desired color */
@@ -20,6 +21,15 @@ body{
   z-index:9999;
 }
 
+.topCon{
+  width:200px;
+  background-color:white;
+  position:absolute;
+  height:6vh;
+}
+.backBtn{
+  border:none;
+}
 
 .con{
   background:rgba(0, 0, 255, 0.1);
@@ -93,4 +103,13 @@ animation-fill-mode:both;
 .projectBtn{
   background:url('https://pngimg.com/d/github_PNG19.png');
   background-size:cover;
+}
+.topCon h2{
+  position:absolute;
+  top:-3vh;
+  margin-left:22%;
+}
+
+.wallDis{
+  
 }
