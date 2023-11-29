@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Black+Ops+One&family=Fuggles&family=Martian+Mono:wght@200&family=Noto+Sans&family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Black+Ops+One&family=Fuggles&family=Martian+Mono:wght@200&family=Noto+Sans&family=Sometype+Mono&display=swap');
 
 body{ 
   scroll-behavior: smooth;
@@ -88,8 +87,8 @@ animation-fill-mode:both;
 .colorTheme{
   background:linear-gradient(90deg,black,white 50%)
 }
-.gadgetBtn{
-  background:url('https://cdn-icons-png.flaticon.com/512/1974/1974769.png');
+.aiBtn{
+  background:url('https://www.edigitalagency.com.au/wp-content/uploads/chatgpt-logo-white-green-background-png.png');
   background-size:cover;
 }
 .adRemove{
@@ -124,4 +123,11 @@ animation-fill-mode:both;
   justify-content:center;
   margin-left:5%;
   margin-top:10%;*/
+}
+
+.aiCon{
+  background-color:red;
+  width:100%;
+  height:90%;
+  margin-top:10%;
 }
