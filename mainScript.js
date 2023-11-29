@@ -179,9 +179,10 @@ let inspectBtn = document.createElement("button");
 inspectBtn.innerText="Inspect"
 inspectBtn.classList.add("inspectBtn")
 mainCon.appendChild(inspectBtn);
+
+var inspectScript = document.createElement('script'); 
+inspectScript.src="https://cdn.jsdelivr.net/gh/SnowLord7/devconsole@master/main.js";
 inspectBtn.addEventListener("click",()=>{
-  var inspectScript = document.createElement('script'); 
-  inspectScript.src="https://cdn.jsdelivr.net/gh/SnowLord7/devconsole@master/main.js";
   document.head.appendChild(inspectScript);
 })
 
