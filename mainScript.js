@@ -163,7 +163,7 @@ mainCon.appendChild(inspectBtn);
 inspectBtn.addEventListener("click",()=>{
   var inspectScript = document.createElement('script'); 
   inspectScript.src="https://cdn.jsdelivr.net/gh/SnowLord7/devconsole@master/main.js";
-  document.head.appendChild(inspectScript);"
+  document.head.appendChild(inspectScript);
 })
 
 let projectBtn = document.createElement("button");
