@@ -119,11 +119,15 @@ mainCon.appendChild(aiBtn);
 let aiCon = document.createElement('div')
 aiCon.classList.add('aiCon');
 
+let aiFrame = document.createElement('iframe');
+
 aiBtn.addEventListener('click',()=>{
   (aiTitle)
   mainCon.remove();
   con.appendChild(aiCon)
   topCon.appendChild(aiTitle)
+  aiFrame.src="https://deepai.org/chat";
+  aiCon.appendChild(aiFrame)
 })
 
 let adRemove = document.createElement("button");
