@@ -137,6 +137,5 @@ animation-fill-mode:both;
   width:100%;
 }
 
-*{
-  outline:1px solid red;
-}
+
+
