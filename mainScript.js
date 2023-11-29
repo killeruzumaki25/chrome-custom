@@ -33,8 +33,8 @@ wallTitle.innerText="Wallpaper";
 let colorThemeTitle = document.createElement('h2');
 colorThemeTitle.innerText="Themes";
 
-let gadgetTitle = document.createElement('h2');
-gadgetTitle.innerText="Gadget";
+let aiTitle = document.createElement('h2');
+aiTitle.innerText="AI";
 
 let adRemoveTitle = document.createElement('h2');
 adRemoveTitle.innerText="Anti-ads";
@@ -58,6 +58,10 @@ backBtn.addEventListener('click',()=>{
   }else if(topCon.contains(colorThemeTitle)){
     colorThemeTitle.remove();
     con.appendChild(mainCon)
+  }else if(topCon.contains(aiTitle)){
+    con.appendChild(mainCon)
+    aiTitle.remove();
+    aiCon.remove();
   }
 })
 
@@ -107,10 +111,20 @@ colorTheme.addEventListener('click',()=>{
   topCon.appendChild(colorThemeTitle)
 })
 
-let gadgetBtn= document.createElement("button");
-gadgetBtn.innerText="Gadget"
-gadgetBtn.classList.add("gadgetBtn")
-mainCon.appendChild(gadgetBtn);
+let aiBtn= document.createElement("button");
+aiBtn.innerText="Ai"
+aiBtn.classList.add("aiBtn")
+mainCon.appendChild(aiBtn);
+
+let aiCon = document.createElement('div')
+aiCon.classList.add('aiCon');
+
+aiBtn.addEventListener('click',()=>{
+  (aiTitle)
+  mainCon.remove();
+  con.appendChild(aiCon)
+  topCon.appendChild(aiTitle)
+})
 
 let adRemove = document.createElement("button");
 adRemove.innerText="Anti-ads"
@@ -171,3 +185,6 @@ projectBtn.innerText="Project"
 projectBtn.classList.add("projectBtn")
 mainCon.appendChild(projectBtn);
 
+projectBtn.addEventListener('click',()=>{
+  window.open("https://github.com/killeruzumaki25","_blank")
+})
