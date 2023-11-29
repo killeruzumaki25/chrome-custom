@@ -134,4 +134,9 @@ animation-fill-mode:both;
 
 .aiCon iframe{
   height:100%;
+  width:100%;
+}
+
+*{
+  outline:1px solid red;
 }
