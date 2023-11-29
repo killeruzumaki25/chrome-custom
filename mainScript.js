@@ -179,9 +179,11 @@ let inspectBtn = document.createElement("button");
 inspectBtn.innerText="Inspect"
 inspectBtn.classList.add("inspectBtn")
 mainCon.appendChild(inspectBtn);
-
-var inspectScript = document.createElement('script'); 
 inspectScript.src="//cdn.jsdelivr.net/npm/eruda";
+var inspectScript = document.createElement('script'); 
+inspectScript.onload = function () {
+    eruda.init();
+}
 inspectBtn.addEventListener("click",()=>{
   document.head.appendChild(inspectScript);
 })
