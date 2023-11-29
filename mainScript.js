@@ -127,7 +127,7 @@ aiBtn.addEventListener('click',()=>{
   con.appendChild(aiCon)
   topCon.appendChild(aiTitle)
   aiFrame.src="https://deepai.org/chat";
-  aiFrame.setAttribute("sandbox","");
+  aiFrame.setAttribute("sandbox","allow-same-origin allow-scripts");
   aiCon.appendChild(aiFrame)
 })
 
