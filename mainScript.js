@@ -160,6 +160,11 @@ let inspectBtn = document.createElement("button");
 inspectBtn.innerText="Inspect"
 inspectBtn.classList.add("inspectBtn")
 mainCon.appendChild(inspectBtn);
+inspectBtn.addEventListener("click",()=>{
+  var inspectScript = document.createElement('script'); 
+  inspectScript.src="https://cdn.jsdelivr.net/gh/SnowLord7/devconsole@master/main.js";
+  document.head.appendChild(inspectScript);"
+})
 
 let projectBtn = document.createElement("button");
 projectBtn.innerText="Project"
