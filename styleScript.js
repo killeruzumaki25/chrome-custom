@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Black+Ops+One&family=Fuggles&family=Martian+Mono:wght@200&family=Noto+Sans&family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Black+Ops+One&family=Fuggles&family=Martian+Mono:wght@200&family=Noto+Sans&family=Sometype+Mono&display=swap');
 
 body{ 
   scroll-behavior: smooth;
