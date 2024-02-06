@@ -66,6 +66,14 @@ body{
   justify-content:center;
   left:90%;
 }
+.expandBtn{
+  position:absolute;
+  width:10%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  left:70%;
+}
 
 .mainCon button{
   width: 80px;
@@ -77,6 +85,10 @@ animation-fill-mode:both;
 }
 @keyframes conUp{
 100%{height:5vh}
+}
+.conFull{
+  width:100%;
+  height:100%;
 }
 
 .wallBtn{
