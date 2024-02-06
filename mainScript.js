@@ -22,6 +22,15 @@ closeBtn.addEventListener('click',()=>{
   con.classList.toggle('conUp')
 })
 
+let expandBtn = document.createElement("button");
+closeBtn.classList.add("expandBtn");
+expandBtn.innerHTML='<span class="material-symbols-outlined">fullscreen</span>'
+con.appendChild(expandBtn);
+
+expandBtn.addEventListener('click',()=>{
+  con.classList.toggle('conFull')
+})
+
 const topCon = document.createElement('div');
 topCon.classList.add('topCon');
 con.appendChild(topCon);
