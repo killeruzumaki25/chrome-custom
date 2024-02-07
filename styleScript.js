@@ -69,6 +69,7 @@ body{
 .expandBtn{
   position:absolute;
   width:10%;
+  height:5vh;
   display:flex;
   align-items:center;
   justify-content:center;
