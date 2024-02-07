@@ -151,6 +151,8 @@ animation-fill-mode:both;
 .aiCon iframe{
   height:100%;
   width:100%;
+  z-index:99;
+  top:0;
 }
 
 
