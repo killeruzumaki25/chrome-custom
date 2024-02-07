@@ -23,7 +23,7 @@ closeBtn.addEventListener('click',()=>{
 })
 
 let expandBtn = document.createElement("button");
-closeBtn.classList.add("expandBtn");
+expandBtn.classList.add("expandBtn");
 expandBtn.innerHTML='<span class="material-symbols-outlined">fullscreen</span>'
 con.appendChild(expandBtn);
 
