@@ -87,6 +87,10 @@ animation-fill-mode:both;
 100%{height:5vh}
 }
 .conFull{
+  left:0;
+  top:0;
+  position:absolute;
+  z-index:999;
   width:100%;
   height:100%;
 }
